@@ -1,6 +1,6 @@
 
 
-name: DEploy Web Projects on Surge
+name: Deploy Web Projects on Surge
 
 on:
   push:
