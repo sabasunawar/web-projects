@@ -9,21 +9,21 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Code
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
       
       - name: Node Setup
-      - uses: actions/setup-node@v3
+        uses: actions/setup-node@v3
         with:
          node-version: 18
          
       - name: Install Surge
-      - run: npm i -g surge
+        run: npm i -g surge
 
       - name: Deploy to Surge
-      - run: surge ./ practice-webprojects.surge.sh  --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ practice-webprojects.surge.sh  --token ${{secrets.SURGE_TOKEN}}
       
 
 
