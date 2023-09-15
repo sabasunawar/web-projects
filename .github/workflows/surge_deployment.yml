@@ -23,7 +23,7 @@ jobs:
         run: npm i -g surge
 
       - name: Deploy to Surge
-        run: surge ./ practice-webprojects.surge.sh  --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ portfolio-webprojects.surge.sh  --token ${{secrets.SURGE_TOKEN}}
       
 
 
