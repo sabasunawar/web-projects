@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-02 || Ecommerce Store</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>
+        <i class="fa-solid fa-store"></i>
+        Store
+      </h1>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#morale">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+      </ul>
+      <div class="nav-icons">
+        <button class="icon-button" id="menu-close-button">
+          <i class="fa-solid fa-square-xmark"></i>
+        </button>
+        <button class="icon-button" id="menu-button">
+          <i id="menu-icon" class="fa-solid fa-bars"></i>
+        </button>
+        <button class="icon-button" id="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="notification show" id="notification"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- CART -->
+
+    <div class="cart" id="cart">
+      <button class="icon-button" id="cart-close-button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h1>Your Cart</h1>
+      <div class="cart-items-container" id="cart-items-container">
+     
+        <!-- <p>No Product selected</p> -->
+        <!-- <div class="cart-product-card">
+          <img src="./assets/images/Product-01.jpg" alt="data-index">
+          <div class="details">
+            <h4>Title</h4>
+            <p>Category</p>
+            <h4>Price: $50</h4>
+          </div>
+          <button data-index="cartproduct- "id="cart-product-card-delete-button" class= "cart-product-card-delete-button"> <i class="fa-solid fa-xmark"></i></button>
+        </div> -->
+
+      </div>
+      
+      <div class="bill-details">
+        <h3>Total Bill: $<span id="total-bill"></span></h3>
+        <button class="checkout" id="checkout">Checkout</button>
+      </div>
+    </div>
+
+    <!-- MORALE -->
+
+    <div class="morale" id="morale">
+      <div class="taglines">
+        <h1>Online Shopping Store</h1>
+        <p id="morale-page-message">
+          Explore our online store, where you can find lots of cool stuff
+          without leaving your home. It's easy to use, safe to buy, and we
+          deliver to you quickly. We're here to make shopping simple and bring
+          what you love right to your door.
+        </p>
+        <h3 id="morale-page-motto">Shop smarter, shop faster</h3>
+      </div>
+      <div class="vector-image">
+        <img
+          src="./assets/svgs/shopping-cart.svg"
+          alt="cart image is downlaoding..."
+        />
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+
+    <div class="about" id="about">
+      <div class="company-info">
+        <h1>About Company</h1>
+        <p>
+          Welcome to <span id="company-name"> Doorstep Delights!</span> We're
+          your go-to online store, making shopping easy and fun. Check out our
+          wide range of top-notch products that we deliver right to you.
+          <span class="read-option" id="read-option"
+            >Shop with us and discover a whole new way to enjoy online shopping!
+            Explore the latest trends, timeless classics, and shop with
+            confidence, knowing that your satisfaction is our top
+            priority.</span
+          >
+        </p>
+        <button id="read-button">Read more</button>
+      </div>
+      <div class="team-info">
+        <h1>About Team</h1>
+        <div class="content-container">
+          <img src="./assets/svgs/about-team.svg" alt="" />
+          <p>
+            Behind the scenes of our website, a dynamic team of software
+            engineers drives the magic. Fueled by creativity and expertise, they
+            translate ideas into a user-friendly reality.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+
+    <div class="products" id="products">
+      <h1>ALL PRODUCTS</h1>
+      <input id="search" type="text" placeholder="search products by name or category" autocomplete="off" />
+      <div class="all-products-container" id="all-products-container">
+        <!-- <p>No Products found</p> -->
+
+        <!-- <div class="product-card" id="product-card"  >
+          <img src="./assets/images/Product-01.jpg" />
+          <div class="details">
+            <p>Title</p>
+            <small>Category:Beauty Products</small>
+            <p>Price: $100</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="center">
+      <h3 >All rights reserved &copy;</h3>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/e319d9ec59.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
