@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.main-container {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 4px rgb(19, 18, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 380px;
+  max-height: 100vh;
+  max-width: 90%;
+  background-color: whitesmoke;
+}
+.image-container {
+  border-radius: 5px;
+  height: 100%;
+  flex: 1;
+}
+.image-container img {
+  border-radius: 5px 0px 0px 5px;
+  width: 100%;
+  min-height: 100%;
+}
+.calculator {
+  border-radius: 0px 5px 5px 0px;
+  background-color: rgba(241, 234, 234, 0.705);
+  height: 100%;
+  flex: 2;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator > h1 {
+  color: rgba(0, 0, 255, 0.856);
+  font-style: italic;
+  text-shadow: 1px 1px rgb(43, 141, 238);
+  font-size: 35px;
+}
+.calculator p {
+  padding: 5px 0px;
+  font-size: 18px;
+}
+.calculator p .bold {
+  font-weight: bold;
+}
+
+.currency-container {
+  display: flex;
+  gap: 10px;
+  margin: 0px 7px;
+}
+
+.calculator .currency-container select {
+  padding: 5px;
+  width: 200px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.calculator .currency-container input {
+  padding: 5px;
+  width: 200px;
+  outline: none;
+  border: 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.calculator .currency-container select:hover,
+input:hover {
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgb(51, 51, 51);
+  outline: none;
+}
+.calculator #swap-btn {
+  margin: 5px 0px;
+  cursor: pointer;
+  color: antiquewhite;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 255, 0.856),
+    rgb(43, 141, 238)
+  );
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+.calculator #swap-btn i {
+  font-size: 15px;
+}
+.calculator #reset-btn {
+  margin: 5px 0px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 255, 0.856),
+    rgb(43, 141, 238)
+  );
+}
+
+.calculator #swap-btn:active,
+#reset-btn:active {
+  transform: scale(0.95);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 255, 0.973),
+    rgb(43, 141, 238)
+  );
+}
+.highlight {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: yellow;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 900px) {
+  .main-container {
+    height: 300px;
+  }
+  .image-container {
+    display: flex;
+    flex: 1;
+  }
+  .image-container img {
+    min-width: 170px;
+    width: 100%;
+  }
+  .calculator {
+    display: flex;
+    flex: 1;
+  }
+  .calculator > h1 {
+    font-size: 30px;
+  }
+  .currency-container select,
+  input {
+    width: 150px;
+  }
+  .currency-container > img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    margin:20px 0px;
+    display: flex;
+    height: 95%;
+    flex-direction: column;
+    gap:3px;
+  }
+  .main-container .currency-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container {
+    display: flex;
+    height:30vh;
+    width:100%;
+    margin-top:20px;
+    align-self: center;
+   
+  }
+  .image-container img{
+margin:0px 10px;
+    border-radius: 5px;
+    width:100%;
+   
+  }
+  .calculator {
+    display: flex;
+    flex: 2;
+    gap:5px;
+    height:70vh;
+    width:100%;
+    margin-bottom:20px;
+  }
+  .currency-container{
+    display:flex;
+    gap:3px;
+    width:90%;
+  }
+  .currency-container select,
+  input {
+    min-width:250px;
+  }
+  .calculator h1{
+    padding-top:10px;
+    font-size: 22px;
+  }
+  .calculator > p{
+    font-size: 16px;
+    margin: 2px 0px;
+  }
+  .calculator #swap-btn  {
+     padding:5px;
+  }
+  .calculator #reset-btn{
+    padding-top:0px;
+    padding:5px 15px;
+  }
+}
+@media screen and (max-width:430px){
+.image-container{
+    display:none;
+}
+.main-container{
+    display: flex;
+    align-self:center;
+   
+}
+.calculator h1{
+  text-align: center;
+}
+}

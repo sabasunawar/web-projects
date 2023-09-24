@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Exchange Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="./assets/images/images.jpg" alt="Currency-exchange-image">
+        </div>
+        <div class="calculator">
+            <h1>RATE EXCHANGE CALCULATOR</h1>
+            <p><span class="bold">Current Rate:</span> <span class="highlight">1 <span  id="source-currency">USD</span> </span>
+                  is equal to <span class="highlight"> <span id="target-currency-amount">325</span> <span id="target-currency">PKR</span></span>
+                
+            </p>
+            <div class="currency-container">
+                <img src="" alt="source-country-image">
+                <select name="country-list" id="source-currency">
+                    <option value="PAK">PAK</option>
+                    <option value="USA">USA</option>
+                    <option value="ISL">ISL</option>
+                </select>
+                <input type="number" placeholder="1">
+            </div>
+            <button id="swap-btn" class="swap"><i class="fa-solid fa-rotate"></i></button>
+            <div class="currency-container">
+                <img src="" alt="target-country-image">
+                <select name="country-list" id="target-currency">
+                    <option value="PAK">PAK</option>
+                    <option value="USA">USA</option>
+                    <option value="ISL">ISL</option>
+                </select>
+                <input type="number" >
+            </div>
+            <button id="reset-btn" class="reset">Reset</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
