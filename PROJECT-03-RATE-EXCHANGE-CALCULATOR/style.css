@@ -63,6 +63,12 @@ body {
   gap: 10px;
   margin: 0px 7px;
 }
+.currency-container > img{
+
+  width:50px;
+  min-width: 50px;
+  
+}
 
 .calculator .currency-container select {
   padding: 5px;
@@ -99,8 +105,8 @@ input:hover {
   border-radius: 5px;
   padding: 8px;
 }
-.calculator #swap-btn i {
-  font-size: 15px;
+.calculator #swap-btn  i {
+  font-size:15px;
 }
 .calculator #reset-btn {
   margin: 5px 0px;
@@ -166,7 +172,7 @@ input:hover {
   .main-container {
     margin:20px 0px;
     display: flex;
-    height: 95%;
+    height:60vh;
     flex-direction: column;
     gap:3px;
   }
@@ -226,6 +232,11 @@ margin:0px 10px;
 @media screen and (max-width:430px){
 .image-container{
     display:none;
+}
+.currency-container{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
 }
 .main-container{
     display: flex;

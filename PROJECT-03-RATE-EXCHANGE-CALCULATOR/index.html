@@ -23,17 +23,16 @@
                 
             </p>
             <div class="currency-container">
-                <img src="" alt="source-country-image">
+                <img src="https://countryflagsapi.netlify.app/flag/pk.svg" alt="source-currency-flag">
                 <select name="country-list" id="source-currency">
-                    <option value="PAK">PAK</option>
-                    <option value="USA">USA</option>
+                    <option value="USA" data-iso-code="PKs">USA - United States Dollars</option>
                     <option value="ISL">ISL</option>
                 </select>
                 <input type="number" placeholder="1">
             </div>
             <button id="swap-btn" class="swap"><i class="fa-solid fa-rotate"></i></button>
             <div class="currency-container">
-                <img src="" alt="target-country-image">
+                <img src="https://countryflagsapi.netlify.app/flag/pk.svg" alt="target-currency-flag">
                 <select name="country-list" id="target-currency">
                     <option value="PAK">PAK</option>
                     <option value="USA">USA</option>
@@ -44,8 +43,8 @@
             <button id="reset-btn" class="reset">Reset</button>
         </div>
     </div>
-
-    <script src="./script.js"></script>
+<script src="./currencies.js"></script>
+    <!-- <script src="./script.js"></script> -->
 </body>
 
 </html>
