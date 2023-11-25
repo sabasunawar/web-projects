@@ -23,7 +23,6 @@ body {
 /* Styling Main Heading of Tic Tac Toe Game */
 .main-heading {
 
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +57,7 @@ body {
       -1px -1px 0 #fff,
       1px -1px 0 #fff,
       -1px 1px 0 #fff;
-    top:15%;
+    top:7%;
     left:59%;
     transform:rotate(15deg);
     color:rgb(241, 88, 241);
@@ -70,26 +69,91 @@ body {
 
 .navigation-card{
     height:10vh;
-    width:200px;
+    width:300px;
     display:flex;
     justify-content:center;
     align-items: center;
-    border:1px solid black;
+    
 }
 .navigation-card > .player{
     padding:7px;
-    width:100px;
-    gap:3px;
-    border:1px solid green;
+    width:150px;
+    gap:5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.player  .checked{
+
+  opacity:0.3;
+}
 .player >  i{
     font-size:30px;
-    color:rgb(241, 88, 241);
+    color:rgb(255, 214, 255);
 }
 .player >h3{
     color:whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* Styling Message Component */
+.message{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:25px;
+  color:rgba(245, 245, 245, 0.788);
+  display:block;
+}
+
+/* Styling Board for the game */
+.board{
+  display:flex;
+  flex-direction: column;
+  width:35vw;
+  height:42vh;
+  margin-top: 10px;
+  background-color:rgba(245, 245, 245, 0.932);
+  border-radius: 5px;
+
+  box-shadow: 1px 1px 2px 3px #dee3ec;
+}
+.board  .row
+{
+  display:flex;
+  width:100%;
+  height:calc(42vh/3);
+}
+
+.row > div{
+  display:flex;
+  width:calc(35vw/3);
+  justify-content: center;
+  align-items: center;
+}
+.row:not(:nth-child(3)){
+    
+  border-bottom: 3px solid #387bf8c4;
+}
+.row > div:not(:nth-child(3)){
+
+  border-right: 3px solid #387bf8a4;
+}
+#box-0 i{
+   font-size:55px;
+   color:#4281f8;
+   text-shadow: 
+   1px 1px 0 #7bd9d7,
+   -1px -1px 0 #7bd9d7,
+   1px -1px 0 #7bd9d7,
+   -1px 1px 0 #7bd9d7;
+}
+#box-1 i{
+  font-size:60px;
+  color:#f99d17;
+  text-shadow: 
+   1px 1px 0 #fdb863,
+   -1px -1px 0 #fdb863,
+   1px -1px 0 #fdb863,
+   -1px 1px 0 #fdb863;
 }
