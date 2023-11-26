@@ -88,20 +88,20 @@ body {
 #player1>  i{
 
     font-size:30px;
-    color:limegreen;
+   color:#4281f8;
 }
 #player1 >h3{
     color:whitesmoke;
-    border-bottom:3px solid limegreen;
+    border-bottom:3px solid #4281f8;
 }
 #player2 >  i{
 
   font-size:30px;
-  color:tomato;
+  color:#f99d17;
 }
 #player2 >h3{
   color:whitesmoke;
-  border-bottom:3px solid tomato;
+  border-bottom:3px solid #f99d17;
 }
 
 .disable  {
@@ -150,8 +150,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.row > div:hover:not(.selected) {
- /* background-color: bisque; */
+.box:hover:not(.selected) {
  background: linear-gradient(
     to bottom,
     rgba(223, 78, 223, 0.425) ,
@@ -167,7 +166,7 @@ body {
 
   border-right: 3px solid #387bf8a4;
 }
-#box-0 i{
+.tick-icon {
    font-size:55px;
    color:#4281f8;
    text-shadow: 
@@ -176,7 +175,7 @@ body {
    1px -1px 0 #7bd9d7,
    -1px 1px 0 #7bd9d7;
 }
-#box-1 i{
+.cross-icon {
   font-size:60px;
   color:#f99d17;
   text-shadow: 
