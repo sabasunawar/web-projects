@@ -120,7 +120,7 @@ body {
   color:rgba(245, 245, 245, 0.932);
   border:2px solid #387bf8c4;
   padding:5px 50px;
-  background-color:#4281f8 ;
+  background-color:#4282f8da ;
   display:block;
   border-radius: 5px;
 }
@@ -183,4 +183,13 @@ body {
    -1px -1px 0 #fdb863,
    1px -1px 0 #fdb863,
    -1px 1px 0 #fdb863;
+}
+.win{
+  background: linear-gradient(
+    to bottom,
+    rgba(223, 78, 223, 0.753) ,
+    #387bf8bd 
+  );
+  border-radius: 2px;
+  
 }
